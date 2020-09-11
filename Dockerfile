@@ -12,7 +12,7 @@ ENV PATH="$PATH:${ANDROID_SDK_ROOT}/tools:${ANDROID_SDK_ROOT}/tools/bin:${ANDROI
 COPY *.sh $PWD/
 
 RUN ./install_common_packages.sh
-RUN ./install_android_tools.sh
+RUN ./install_command_line_tools.sh
 RUN ./install_android_build_tools.sh
 
 RUN rm -v *.sh
